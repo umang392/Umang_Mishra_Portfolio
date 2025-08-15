@@ -1,7 +1,6 @@
-# Umang_Mishra_Portfolio
 # Umang Mishra Portfolio Website
 
-This repository contains the source code for the personal portfolio website of Umang Mishra, showcasing his education, skills, projects, certifications, achievements, and contact information.
+This repository contains the source code for Umang Mishra's personal portfolio website, which showcases his education, skills, projects, certifications, achievements, and contact information.
 
 ## Website Features
 
