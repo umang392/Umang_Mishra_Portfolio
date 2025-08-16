@@ -1,4 +1,3 @@
-/* Root color variables for light/dark modes */
 :root {
   --bg: #f6f7fb;
   --text: #232440;
@@ -6,8 +5,7 @@
   --card: #fff;
   --shadow: 0 1px 5px rgba(50,60,110,0.09);
 }
-
-/* Dark mode overrides */
+/* -- Dark Mode Variables -- */
 body.dark {
   --bg: #181c27;
   --text: #f3f3f6;
@@ -15,8 +13,6 @@ body.dark {
   --card: #232440;
   --shadow: 0 1px 5px rgba(20,22,50,0.16);
 }
-
-/* Universal styles */
 body {
   background: var(--bg);
   color: var(--text);
@@ -24,8 +20,7 @@ body {
   font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
   transition: background .3s, color .3s;
 }
-
-/* Header and navigation styles */
+/* ----- HEADER/Navbar Styles ----- */
 header {
   display: flex; justify-content: space-between; align-items: center;
   padding: 1rem 2vw;
@@ -43,14 +38,13 @@ nav a {
 }
 nav .cv-btn { background: var(--accent); color: #fff; }
 nav a:hover { background: var(--accent); color: #fff; }
+main { max-width: 980px; margin: 0 auto; padding: 1.6em 1vw; background: none; }
 
-/* Main content area */
-main { max-width: 980px; margin: 0 auto; padding: 1.5em 1vw; background: none; }
-
-/* Hero/About section */
+/* ----- Hero/About Styles ----- */
 .hero {
   display: flex; gap: 2em; align-items: center;
-  margin: 2em 0 3em; flex-wrap: wrap;
+  margin: 2em 0 3em;
+  flex-wrap: wrap;
 }
 .avatar-container {
   display: flex; flex-direction: column; align-items: center; gap: 1em;
@@ -64,10 +58,9 @@ main { max-width: 980px; margin: 0 auto; padding: 1.5em 1vw; background: none; }
   padding: 0.3em 1.1em; font-size: 0.97em;
   margin-top: 0.5em;
 }
+
 .hero h1 { margin: 0; font-size: 2em; }
 .tagline { font-size: 1.1em; margin: 0.7em 0 1.5em; }
-
-/* Contact action buttons */
 .contact-actions { display: flex; gap: 1em; margin-top: 0.2em; }
 .btn {
   background: var(--card); color: var(--accent);
@@ -80,15 +73,14 @@ main { max-width: 980px; margin: 0 auto; padding: 1.5em 1vw; background: none; }
 .btn:hover { background: var(--accent); color: #fff; }
 .btn.accent { background: var(--accent); color: #fff; }
 
-/* Section heading */
-section { margin-bottom: 2.5em; }
+section { margin-bottom: 2.7em; }
 h2 {
   font-size: 1.3em; border-left: 5px solid var(--accent);
   padding-left: 0.6em; font-weight: 700; margin-bottom: 1.1em;
 }
 .info { margin: 0.7em 0; }
 
-/* Stepper (Education) styles */
+/* ----- Stepper (Education) ----- */
 .stepper {
   list-style: none; margin: 0; padding: 0 0 0 1.2em;
   border-left: 2px solid var(--accent);
@@ -106,7 +98,7 @@ h2 {
 .stepper strong { font-size: 1.02em; }
 .stepper span { display: block; opacity: 0.84; font-size: 0.98em; margin: 2.5px 0 7px; }
 
-/* Timeline (Experience) styles */
+/* ----- Timeline (Experience) ----- */
 .timeline {
   list-style: none; margin: 0; padding: 0 0 0 2em; position: relative; border-left: 2px solid var(--accent);
 }
@@ -122,14 +114,14 @@ h2 {
 .company { font-size: 1em; font-weight: 600; }
 .duration { font-size: 0.9em; opacity: 0.85; margin-left: 6px; }
 
-/* Extracurricular positions list */
+/* ----- Extracurricular Roles ----- */
 .positions {
   padding-left: 1.1em; list-style: none;
 }
 .positions li { margin-bottom: 0.7em; }
 
-/* Projects grid and cards */
-.projects-hint { font-size: .97em; color: var(--accent); font-weight: 400; }
+/* ----- Projects Section ----- */
+.projects-hint { font-size: .96em; font-weight: 400; color: var(--accent); }
 .projects-grid {
   display: grid; gap: 1.15em;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -138,7 +130,7 @@ h2 {
   background: var(--card); color: var(--text);
   box-shadow: var(--shadow); border-radius: 8px;
   padding: 1em 1.1em 1.2em; position: relative;
-  cursor: pointer; min-height: 110px;
+  cursor: pointer; min-height: 120px;
   transition: box-shadow 0.16s, background 0.16s;
 }
 .project-card:hover, .project-card.active {
@@ -146,24 +138,22 @@ h2 {
   box-shadow: 0 4px 20px rgba(40,80,200,0.11);
 }
 .project-card .proj-title { font-size: 1.07em; font-weight: 600; margin-bottom: 0.4em; }
-.project-card .proj-stack { font-size: .98em; color: var(--accent); opacity: 0.85; margin-bottom: 0.7em; }
+.project-card .proj-stack { font-size: .98em; color: var(--accent); opacity: 0.85; margin-bottom: 0.8em; }
 body.dark .project-card .proj-stack { color: #e0e4fa; }
-.project-details { margin-top: 0.6em; font-size: .99em; line-height: 1.61; }
+.project-details { margin-top: 0.6em; font-size: .98em; line-height: 1.6; }
 .project-link { color: inherit; text-decoration: underline; }
 
-/* Skills section */
+/* ----- Skills List ----- */
 .skills-list { list-style: none; margin: 0; padding: 0 0 0 .9em; }
 .skills-list li { margin-bottom: 7px; }
 .skills-list ul { margin-top: 4px; margin-bottom: 0; }
 .skills-list ul li { margin-bottom: 1px; }
 
-/* Footer styles */
 footer {
-  padding: 1.5em 0 0.7em; text-align: center; opacity: .76; font-size: .98em; margin-top: 1em;
+  padding: 1.7em 0 0.7em; text-align: center; opacity: .76; font-size: .98em; margin-top: 1em;
 }
 
-/* Dark/Light theme toggle button */
-/* Fixed-position moon/sun button top-right */
+/* ----- Theme Toggle Button Styles ----- */
 .theme-toggle {
   position: fixed; top: 16px; right: 18px; z-index: 9999;
   background: var(--card); color: var(--accent); border-radius: 50%;
@@ -175,7 +165,7 @@ footer {
 }
 .theme-toggle:hover { background: var(--accent); color: #fff; }
 
-/* Responsive/mobile tweaks */
+/* Responsive Design */
 @media (max-width: 800px) {
   header { flex-direction: column; align-items: flex-start; padding-top: 1.2em; gap: 10px; }
   .hero { flex-direction: column; gap: 1.2em; }
@@ -185,11 +175,10 @@ footer {
 @media (max-width: 540px) {
   header nav a { display: block; margin: 0.34em 0 0; padding: 0.43em 0.8em; }
   .avatar { width: 80px; height: 80px; }
-  h2 { font-size: 1.11em; }
+  h2 { font-size: 1.12em; }
   .tagline { font-size: 1em; }
 }
-
-/* Custom scrollbar coloring */
+/* Custom scrollbar */
 ::-webkit-scrollbar { width: 8px; background: #ececec; }
 body.dark ::-webkit-scrollbar { background: #232440; }
 ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 5px; }
