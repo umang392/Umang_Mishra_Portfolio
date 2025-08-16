@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Umang Mishra</title>
+  <meta name="description" content="Portfolio of Umang Mishra" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <div class="nav-brand">Umang Mishra</div>
+    <button class="nav-toggle" id="navToggle" aria-label="Show navigation" aria-controls="nav-links" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#extracurricular">Extra-Curricular</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="Umang_Mishra_Resume.pdf" download class="cv-btn" rel="noopener noreferrer">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 18 18"><path d="M9 2v9m0 0l3.5-3.5M9 11l-3.5-3.5"/><rect x="3" y="14" width="12" height="2" rx="1" fill="currentColor"/></svg>
+      Download Resume
+    </a>
+    <button id="darkmode-toggle" class="dm-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" tabindex="0">
+      <span class="dm-icon" aria-hidden="true"></span>
+    </button>
+  </nav>
+  <header class="hero">
+    <div class="hero-content">
+      <img src="profile.jpg" alt="Umang Mishra Portrait" class="profile-img" />
+      <h1>Umang Mishra</h1>
+      <p>
+        Electronics & Communication Engineer<br>
+        Embedded | VLSI | Firmware | Signal Processing | Wireless Systems | Mentor
+      </p>
+      <div class="hero-links">
+        <a href="mailto:umangmishra392@gmail.com" class="hero-link" tabindex="0">umangmishra392@gmail.com</a>
+        <a href="tel:+919650870928" class="hero-link" tabindex="0">+91 9650870928</a>
+        <a href="https://www.linkedin.com/in/umang-mishra392/" class="hero-link" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="about" class="reveal">
+      <h2>About Me</h2>
+      <p>
+        Hi, I'm Umang Mishra—an ECE engineer specializing in embedded systems, VLSI, and innovative hardware/firmware solutions for real-world challenges. With a passion for advanced circuit design, digital logic, AI-powered verification, and communication protocols, I excel at bridging software and hardware to transform ideas into robust products. Mentor, builder, and continuous learner.
+      </p>
+    </section>
+    <section id="education" class="reveal">
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>M.Tech, Communication System Engineering (ECE)</strong><br>
+          National Institute of Technology Jamshedpur, 2024–26<br>
+          CGPA: 8.20
+        </li>
+        <li>
+          <strong>B.Tech, Electronics & Communication Engineering</strong><br>
+          Dr. APJ Abdul Kalam Technical University, Lucknow, 2020–24<br>
+          CGPA: 7.61
+        </li>
+        <li>
+          <strong>Class XII (CBSE)</strong><br>
+          Vishwa Bharati Public School, 2020 – 82.6%
+        </li>
+        <li>
+          <strong>Class X (CBSE)</strong><br>
+          Vishwa Bharati Public School, 2018 – 89.2%
+        </li>
+      </ul>
+    </section>
+    <section id="experience" class="reveal">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>NXP Semiconductors</h3>
+            <p>Technical Intern – Firmware Automotive Security (July 2025–Present)</p>
+            <ul>
+              <li>Develop and maintain embedded code for automotive security</li>
+              <li>Debug hardware/software interplay to deliver robust ECUs</li>
+              <li>Implement secure real-time firmware compliant with auto safety standards</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>NIT Jamshedpur</h3>
+            <p>Teaching Assistant (Aug 2024–July 2025)</p>
+            <ul>
+              <li>Lead labs, mentor students, grade, and assist with electronics and programming coursework</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>DRDO</h3>
+            <p>Research Intern (July 2023–Aug 2023)</p>
+            <ul>
+              <li>Designed analog models for microwave ICs and defense electronics in ADS</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects" class="reveal">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card" tabindex="0" aria-label="AI-Based Fault Detection" onclick="showModal('modal-ai')">
+          <h3>AI Fault Detection (VLSI)</h3>
+          <p>Python/ML for rapid Verilog circuit debugging.</p>
+        </div>
+        <div class="project-card" tabindex="0" aria-label="Auto Testbench Gen" onclick="showModal('modal-tb')">
+          <h3>Auto Testbench Generator</h3>
+          <p>Python tool for testbench automation.</p>
+        </div>
+        <div class="project-card" tabindex="0" aria-label="CAN Bus Monitoring" onclick="showModal('modal-canbus')">
+          <h3>CAN Bus Vehicle Monitoring</h3>
+          <p>Multi-ECU comms system (ATmega328P, C).</p>
+        </div>
+        <div class="project-card" tabindex="0" aria-label="Wireless EV Charging" onclick="showModal('modal-ev')">
+          <h3>Wireless EV Charger</h3>
+          <p>80% efficient, cableless system for e-vehicles.</p>
+        </div>
+        <div class="project-card" tabindex="0" aria-label="UWB Antenna CST" onclick="showModal('modal-uwb')">
+          <h3>UWB Array Antenna</h3>
+          <p>Planar antenna, 6–8.5GHz (CST Studio).</p>
+        </div>
+        <div class="project-card" tabindex="0" aria-label="More" onclick="showModal('modal-more')">
+          <h3>View More Projects</h3>
+          <p>45+ advanced ECE, embedded, comm, VLSI and IoT builds.</p>
+        </div>
+      </div>
+      <!-- Key project modals -->
+      <div id="modal-ai" class="modal" role="dialog" aria-modal="true"><div class="modal-content"><span class="close" tabindex="0" aria-label="Close" onclick="hideModal('modal-ai')">&times;</span><h3>AI-Based Fault Detection in VLSI Circuits</h3><p>Python/AI-driven detection of faults in Verilog digital circuits, enabling faster, more reliable VLSI design verification.</p></div></div>
+      <div id="modal-tb" class="modal" role="dialog" aria-modal="true"><div class="modal-content"><span class="close" tabindex="0" aria-label="Close" onclick="hideModal('modal-tb')">&times;</span><h3>Automated Testbench Generator</h3><p>Tool to auto-generate Verilog/systemverilog testbenches from RTL, streamlining simulation and reducing dev effort.</p></div></div>
+      <div id="modal-canbus" class="modal" role="dialog" aria-modal="true"><div class="modal-content"><span class="close" tabindex="0" aria-label="Close" onclick="hideModal('modal-canbus')">&times;</span><h3>CAN Bus Vehicle Monitoring</h3><p>CAN-based monitoring with real-time data, message filtering, and comms simulation using ATmega328P and C.</p></div></div>
+      <div id="modal-ev" class="modal" role="dialog" aria-modal="true"><div class="modal-content"><span class="close" tabindex="0" aria-label="Close" onclick="hideModal('modal-ev')">&times;</span><h3>Wireless EV Charger</h3><p>Cutting-edge cableless EV charging system, 80% efficiency, for next-gen e-mobility.</p></div></div>
+      <div id="modal-uwb" class="modal" role="dialog" aria-modal="true"><div class="modal-content"><span class="close" tabindex="0" aria-label="Close" onclick="hideModal('modal-uwb')">&times;</span><h3>UWB Array Antenna Design</h3><p>Ultra-wideband planar antenna for advanced wireless comms, simulated 6–8.5GHz (CST Studio).</p></div></div>
+      <div id="modal-more" class="modal" role="dialog" aria-modal="true"><div class="modal-content"><span class="close" tabindex="0" aria-label="Close" onclick="hideModal('modal-more')">&times;</span>
+        <h3>Other Key Projects</h3>
+        <ul>
+          <li>Synchronous FIFO, Dual Port RAM, 4-bit ALU & MUX (FPGA/Verilog, Xilinx Vivado)</li>
+          <li>Common-source/Cascode Amp & Ring Oscillator (Cadence Virtuoso)</li>
+          <li>Power estimation in RTL via ML, Automated testbenches, PWM generator (Python/EDA)</li>
+          <li>Unmanned Aerial Vehicle (Drone, 800m telemetry, autonomous flight)</li>
+          <li>Trip Pay: IoT/GoI mobility solution with GPS and real-time traffic/transport</li>
+          <li>Digital potentiometer (I2C), VAD with MATLAB DSP, and more…</li>
+        </ul>
+        <p>
+          For the full list, see my <a href="Umang_Mishra_Resume.pdf" download>resume</a> or <a href="https://www.linkedin.com/in/umang-mishra392/" target="_blank" rel="noopener">LinkedIn</a>.
+        </p>
+      </div></div>
+    </section>
+    <section id="skills" class="reveal">
+      <h2>Technical Skills</h2>
+      <div class="skills-list">
+        <div class="skill-bar"><span>C/C++</span><div class="bar-bg"><div class="bar-fill" data-width="97%"></div></div></div>
+        <div class="skill-bar"><span>Python</span><div class="bar-bg"><div class="bar-fill" data-width="95%"></div></div></div>
+        <div class="skill-bar"><span>Verilog</span><div class="bar-bg"><div class="bar-fill" data-width="95%"></div></div></div>
+        <div class="skill-bar"><span>Cadence Virtuoso</span><div class="bar-bg"><div class="bar-fill" data-width="91%"></div></div></div>
+        <div class="skill-bar"><span>Xilinx Vivado</span><div class="bar-bg"><div class="bar-fill" data-width="91%"></div></div></div>
+        <div class="skill-bar"><span>MATLAB/Simulink</span><div class="bar-bg"><div class="bar-fill" data-width="86%"></div></div></div>
+        <div class="skill-bar"><span>Synopsys EDA Tools</span><div class="bar-bg"><div class="bar-fill" data-width="82%"></div></div></div>
+        <div class="skill-bar"><span>EDA Playground</span><div class="bar-bg"><div class="bar-fill" data-width="78%"></div></div></div>
+        <div class="skill-bar"><span>Linux</span><div class="bar-bg"><div class="bar-fill" data-width="90%"></div></div></div>
+      </div>
+      <div class="skills-extra">
+        <span class="chip">Embedded Systems</span>
+        <span class="chip">VLSI</span>
+        <span class="chip">Digital Electronics</span>
+        <span class="chip">Signal Processing</span>
+        <span class="chip">Wireless Comm</span>
+        <span class="chip">IoT</span>
+      </div>
+    </section>
+    <section id="certifications" class="reveal">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Electronic Devices (AICTE)</li>
+        <li>Digital System Design (AICTE)</li>
+        <li>Introduction to IoT & Embedded Systems (Coursera)</li>
+      </ul>
+    </section>
+    <section id="achievements" class="reveal">
+      <h2>Academic Achievements</h2>
+      <ul>
+        <li>Qualified GATE-2024 (Electronics & Communication)</li>
+        <li>Qualified JEE (MAIN) 2020</li>
+      </ul>
+    </section>
+    <section id="extracurricular" class="reveal">
+      <h2>Extra-Curricular</h2>
+      <ul>
+        <li>Training & Placement/Internship Coordinator, NIT Jamshedpur</li>
+        <li>President, Technical Head & Subhead: Aeronautical Society, IPEC, AKTU</li>
+        <li>Core member, UDBHAV 2024 (Techno-Cultural Fest), IPEC</li>
+      </ul>
+    </section>
+    <section id="contact" class="reveal">
+      <h2>Contact Me</h2>
+      <form class="contact-form" onsubmit="return false;">
+        <label>Name: <input type="text" name="name" required></label>
+        <label>Email: <input type="email" name="email" required></label>
+        <label>Message: <textarea name="msg" rows="4" required></textarea></label>
+        <button type="submit" onclick="notifySend()">Send Message</button>
+        <div id="contact-notifier" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+  <footer>
+    &copy; 2025 Umang Mishra. Electronics & Communication Portfolio.
+  </footer>
+  <div id="toast" role="alert" aria-live="assertive"></div>
+  <script src="scripts.js"></script>
+</body>
+</html>
