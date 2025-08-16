@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Umang Mishra | Portfolio</title>
+  <!-- Link external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Dark/Light mode toggle button -->
+  <div class="theme-toggle" id="themeToggle" title="Switch Dark/Light">&#9790;</div>
+
+  <!-- Header/Navbar -->
+  <header class="header">
+    <div class="logo">Umang Mishra</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#extracurricular">Extracurricular</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <a href="Umang_Mishra_Resume.pdf" download class="btn cv-btn">Download CV</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- === About Section with profile image upload === -->
+    <section class="hero" id="about">
+      <div class="avatar-container">
+        <!-- Profile Image (loads from file or browser storage) -->
+        <img id="profileImg" src="profile.JPG" alt="Profile photo" class="avatar">
+        <!-- Hidden file input for uploading new profile image -->
+        <input type="file" accept="image/*" id="profileImgInput" style="display:none">
+        <!-- Button triggers file input -->
+        <button class="btn" id="uploadBtn" type="button">Change Photo</button>
+      </div>
+      <div>
+        <h1>Umang Mishra</h1>
+        <p class="tagline">
+          MTech (ECE, Comm. Systems) | Firmware & Embedded | VLSI | Problem Solver
+        </p>
+        <!-- Quick contact actions -->
+        <div class="contact-actions">
+          <a href="mailto:umangmishra392@gmail.com" class="btn accent">Email</a>
+          <a href="tel:+919650870928" class="btn accent">Call</a>
+          <a href="https://linkedin.com/in/umang-mishra" target="_blank" rel="noopener" class="btn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Education Stepper === -->
+    <section id="education">
+      <h2>Education</h2>
+      <ol class="stepper">
+        <li>
+          <div>
+            <strong>Master of Technology - Communication System Engineering (ECE)</strong>
+            <span>National Institute of Technology, Jamshedpur <b>2024-26</b></span>
+          </div>
+          <div>CGPA: 8.20</div>
+        </li>
+        <li>
+          <div>
+            <strong>Bachelor of Technology - Electronics & Communication Engineering</strong>
+            <span>Dr. APJ Abdul Kalam Technical University, Lucknow <b>2020-24</b></span>
+          </div>
+          <div>CGPA: 7.61</div>
+        </li>
+        <li>
+          <div>
+            <strong>AISSCE (12th), CBSE</strong>
+            <span>Vishwa Bharati Public School, New Delhi <b>2020</b></span>
+          </div>
+          <div>Percentage: 82.6%</div>
+        </li>
+        <li>
+          <div>
+            <strong>AISSE (10th), CBSE</strong>
+            <span>Vishwa Bharati Public School, New Delhi <b>2018</b></span>
+          </div>
+          <div>Percentage: 89.2%</div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- === Experience Timeline === -->
+    <section id="experience">
+      <h2>Work Experience</h2>
+      <ul class="timeline">
+        <li>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Technical Intern (Firmware Automotive Security)</h3>
+            <span class="company">NXP Semiconductors</span>
+            <span class="duration">Jul 2025 - Present</span>
+            <ul>
+              <li>Develop secure embedded firmware for automotive security.</li>
+              <li>Debug low-level hardware-software and ensure robust real-time implementation of security.</li>
+              <li>Meet automotive safety standards.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Teaching Assistant</h3>
+            <span class="company">NIT Jamshedpur</span>
+            <span class="duration">Aug 2024 - Jul 2025</span>
+            <ul>
+              <li>Assisted in teaching, mentoring, lab supervision, grading.</li>
+              <li>Guided students in electronics, programming, research activities.</li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Research Intern</h3>
+            <span class="company">DRDO</span>
+            <span class="duration">Jul 2023 - Aug 2023</span>
+            <ul>
+              <li>Designed analog models using MMIC, ADS tools for defense apps.</li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- === Extracurricular Positions === -->
+    <section id="extracurricular">
+      <h2>Extracurricular Positions</h2>
+      <ul class="positions">
+        <li><b>Training & Placement Coordinator, Internship Coordinator</b> — NIT Jamshedpur</li>
+        <li><b>President, Technical Head, Technical Subhead</b> — Aeronautical Society, IPEC, AKTU</li>
+        <li><b>Core Member</b> — UDBHAV, 2024 (Annual Techno-Cultural Fest), IPEC</li>
+      </ul>
+    </section>
+
+    <!-- === Projects (Rendered by script.js) === -->
+    <section id="projects">
+      <h2>Projects <span class="projects-hint">(tap/click to view details!)</span></h2>
+      <!-- Projects will be rendered here by JS -->
+      <div class="projects-grid"></div>
+    </section>
+
+    <!-- === Skills & Certifications === -->
+    <section id="skills">
+      <h2>Technical Skills & Certifications</h2>
+      <ul class="skills-list">
+        <li><b>Languages:</b> C, C++, Python, Verilog</li>
+        <li><b>Tools:</b> Cadence Virtuoso, Xilinx Vivado, Synopsys EDA Tools, EDA Playground</li>
+        <li><b>Frameworks:</b> MATLAB, Simulink</li>
+        <li><b>Operating Systems:</b> Windows, LINUX</li>
+        <li><b>Areas of Interest:</b> Embedded Systems, VLSI, Digital Electronics, Signal Processing, Wireless Comm.</li>
+        <li><b>Certifications:</b>
+          <ul>
+            <li>Electronic Devices (AICTE)</li>
+            <li>Digital System Design (AICTE)</li>
+            <li>Introduction to Internet of Things & Embedded Systems (Coursera)</li>
+          </ul>
+        </li>
+        <li><b>Achievements:</b>
+          <ul>
+            <li>Qualified GATE-2024 (ECE)</li>
+            <li>Qualified JEE (MAIN) 2020</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <!-- === Contact Section === -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="info"><b>Email:</b> <a href="mailto:umangmishra392@gmail.com">umangmishra392@gmail.com</a></p>
+      <p class="info"><b>Phone:</b> <a href="tel:+919650870928">+91 9650 870 928</a></p>
+      <p class="info"><b>LinkedIn:</b> <a href="https://linkedin.com/in/umang-mishra" target="_blank" rel="noopener">umang-mishra</a></p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Umang Mishra. All rights reserved.
+  </footer>
+
+  <!-- Link external JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
